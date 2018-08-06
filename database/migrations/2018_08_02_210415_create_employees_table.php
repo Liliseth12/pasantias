@@ -18,7 +18,7 @@ class CreateEmployeesTable extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('email')->unique();
-            $table->integer('ci');
+            $table->integer('ci')->unique();
             $table->integer('phonenumber');
             $table->date('entrydate');
             $table->date('outdate')->nullable();
